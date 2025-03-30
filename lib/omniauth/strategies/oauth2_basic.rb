@@ -2,6 +2,7 @@
 
 class OmniAuth::Strategies::Oauth2Basic < ::OmniAuth::Strategies::OAuth2
   option :name, "oauth2_basic"
+  option :pkce, true
 
   uid do
     if path = SiteSetting.oauth2_callback_user_id_path.split(".")
