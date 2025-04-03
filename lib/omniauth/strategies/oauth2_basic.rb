@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class OmniAuth::Strategies::Oauth2Basic < ::OmniAuth::Strategies::OAuth2
-  option :name, "oauth2_basic"
+  option :name, "oauth2_basic_pkce"
   option :pkce, true
 
   uid do
