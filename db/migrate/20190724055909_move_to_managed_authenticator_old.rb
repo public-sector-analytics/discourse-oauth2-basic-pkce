@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class MoveToManagedAuthenticator < ActiveRecord::Migration[5.2]
+class MoveToManagedAuthenticatorOld < ActiveRecord::Migration[5.2]
   def up
     execute <<~SQL
     INSERT INTO user_associated_accounts (
