@@ -2,6 +2,7 @@
 
 class MoveToManagedAuthenticatorOld < ActiveRecord::Migration[5.2]
   def up
+    return
     execute <<~SQL
     INSERT INTO user_associated_accounts (
       provider_name,
